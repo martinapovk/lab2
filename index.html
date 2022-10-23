@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form Id="registration">
+        <fieldset>
+            <legend> Форма реєстрації </legend>
+            <table class="alignment">
+                <tr>
+                    <td> <label for=name> ПІБ </label>
+                    </td>
+                    <td>
+                        <input id=name name=name type=text placeholder="Іванів Іван Іванович" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for=email> Email </label>
+                    </td>
+                    <td> <input id=email name=email type=email placeholder="example@gmail.com" required> </td>
+                </tr>
+                <tr>
+                    <td> <label for=phone> Номер телефону </label>
+                    </td>
+                    <td> <input id="phone" name="phone" type="tel" placeholder="380XXXXXXXXX" pattern="380[0-9]{9}" required> </td>
+                </tr>
+                <tr>
+                    <td> <label for=dateofbirth> Дата народження </label>
+                    </td>
+                    <td> <input id=dateofbirth name=dateofbirth type="date" /> </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend> Параметри доставки </legend>
+            <table>
+                <tr>
+                    <td> <label for=address> Адреса </label>
+                    </td>
+                    <td> <textarea id=address name=address rows=5> </textarea> </td>
+                </tr>
+                <tr>
+                    <td> <label for=postcode> Поштовий індекс </label> </td>
+                    <td> <input id=postcode name=postcode type=text pattern="[0-9]{6}"> </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend> Бажаний спосіб отримання повідомлень </legend>
+            <table>
+                <tr>
+                    <td>
+                        <input id=emailmessage name=message type=radio>
+                    </td>
+                    <td> <label for=emailmessage> Email </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input id=phonemessage name=message type=radio> </td>
+                    <td> <label for=phonemessage> По телефону </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input id=nomessagee name=message type=radio> </td>
+                    <td> <label for=nomessage> Не повідомляти мене </label>
+                    </td>
+        
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <button type=submit> Відправити дані </button>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
